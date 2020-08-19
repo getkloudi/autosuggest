@@ -25,6 +25,9 @@ const defaultTheme = {
   sectionContainer: 'react-autowhatever__section-container',
   sectionContainerFirst: 'react-autowhatever__section-container--first',
   sectionTitle: 'react-autowhatever__section-title',
+  commandPanelInputLogo: 'command-panel-input-logo',
+  commandPanelInputWrapper: 'command-panel-input-wrapper',
+  commandPanelInputWrapperFocused: 'command-panel-input-wrapper-focused',
 };
 
 export default class Autowhatever extends Component {
@@ -430,7 +433,21 @@ export default class Autowhatever extends Component {
 
     return (
       <div {...containerProps}>
-        {inputComponent}
+        <div
+          {...theme(
+            `react-autowhatever-${id}-commandPanelInputWrapper`,
+            `commandPanelInputWrapper`,
+            isInputFocused && `commandPanelInputWrapperFocused`
+          )}
+        >
+          <img
+            {...theme(
+              `react-autowhatever-${id}-commandPanelInputLogo`,
+              `commandPanelInputLogo`
+            )}
+          />
+          {inputComponent}
+        </div>
         {itemsContainer}
       </div>
     );
