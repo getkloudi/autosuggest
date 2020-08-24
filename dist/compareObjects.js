@@ -1,32 +1,14 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-  value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = compareObjects;
+exports["default"] = compareObjects;
 
-function _typeof(obj) {
-  '@babel/helpers - typeof';
-  if (typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol') {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj &&
-        typeof Symbol === 'function' &&
-        obj.constructor === Symbol &&
-        obj !== Symbol.prototype
-        ? 'symbol'
-        : typeof obj;
-    };
-  }
-  return _typeof(obj);
-}
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function compareObjects(objA, objB) {
-  var keys =
-    arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+  var keys = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
 
   if (objA === objB) {
     return false;
@@ -55,13 +37,7 @@ function compareObjects(objA, objB) {
       continue;
     }
 
-    if (
-      !keysMap[key] ||
-      aValue === null ||
-      bValue === null ||
-      _typeof(aValue) !== 'object' ||
-      _typeof(bValue) !== 'object'
-    ) {
+    if (!keysMap[key] || aValue === null || bValue === null || _typeof(aValue) !== 'object' || _typeof(bValue) !== 'object') {
       return true;
     }
 

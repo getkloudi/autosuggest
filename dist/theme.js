@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-  value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
 exports.mapToAutowhateverTheme = exports.defaultTheme = void 0;
 var defaultTheme = {
@@ -18,7 +18,7 @@ var defaultTheme = {
   suggestionHighlighted: 'react-autosuggest__suggestion--highlighted',
   sectionContainer: 'react-autosuggest__section-container',
   sectionContainerFirst: 'react-autosuggest__section-container--first',
-  sectionTitle: 'react-autosuggest__section-title',
+  sectionTitle: 'react-autosuggest__section-title'
 };
 exports.defaultTheme = defaultTheme;
 
