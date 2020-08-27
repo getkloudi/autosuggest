@@ -445,6 +445,7 @@ export default class Autowhatever extends Component {
               `react-autowhatever-${id}-commandPanelInputLogo`,
               `commandPanelInputLogo`
             )}
+            src={this.props.inputProps.searchLogo}
           />
           {inputComponent}
         </div>
