@@ -788,7 +788,7 @@ var Autowhatever = /*#__PURE__*/ (function (_Component) {
                   'commandPanelInputLogo'
                 ),
                 {
-                  src: this.props.inputProps.searchLogo,
+                  src: this.props.inputProps.search,
                 }
               )
             ),
